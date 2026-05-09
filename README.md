@@ -14,6 +14,22 @@ The project uses **spaCy** for text preprocessing and text vectorization, **Ligh
 
 ---
 
+## Live Demo
+
+You can try the deployed Streamlit web application here:
+
+[Live Demo - Yelp Feedback Analysis App](https://yelp-feedback-analysis-spacy-ml-iuf5cjgm8rnq2tjmnppcwa.streamlit.app/)
+
+---
+
+## Dataset Source
+
+The dataset used for this project is available on Hugging Face:
+
+[Yelp Review Full Dataset - Hugging Face](https://huggingface.co/datasets/Yelp/yelp_review_full?utm_source=chatgpt.com)
+
+---
+
 ## Objective
 
 The main objective of this project is to analyze customer feedback and predict the sentiment category based on review text.
@@ -38,7 +54,7 @@ This helps in understanding whether a customer's feedback is poor, average, or g
 
 ## Dataset
 
-The dataset used for this project is the Yelp Review dataset.
+The dataset used for this project is the **Yelp Review Full Dataset**.
 
 The dataset contains customer reviews and rating labels. These reviews are used to train a Machine Learning model to understand the relationship between review text and customer sentiment.
 
@@ -98,21 +114,17 @@ The model predicts feedback into three categories:
 
 ## Folder Structure
 
-yelp-feedback-analysis-spacy-ml/
-
-├── app.py
-
-├── requirements.txt
-
-├── .gitignore
-
-├── model/
-
-│   └── yelp_analysis_model.pkl
-
-└── utils/
-
-    └── text_preprocessing.py
+    yelp-feedback-analysis-spacy-ml/
+    │
+    ├── app.py
+    ├── requirements.txt
+    ├── .gitignore
+    │
+    ├── model/
+    │   └── yelp_analysis_model.pkl
+    │
+    └── utils/
+        └── text_preprocessing.py
 
 ---
 
@@ -143,27 +155,27 @@ yelp-feedback-analysis-spacy-ml/
 
 ### Positive Review
 
-The food was amazing and the service was excellent.
+    The food was amazing and the service was excellent.
 
 Expected output:
 
-Positive
+    Positive
 
 ### Negative Review
 
-The food was cold and the staff was rude.
+    The food was cold and the staff was rude.
 
 Expected output:
 
-Negative
+    Negative
 
 ### Neutral Review
 
-The food was okay, nothing special.
+    The food was okay, nothing special.
 
 Expected output:
 
-Neutral
+    Neutral
 
 ---
 
@@ -171,21 +183,14 @@ Neutral
 
 The required libraries are listed in the `requirements.txt` file.
 
-streamlit
-
-scikit-learn
-
-pandas
-
-numpy
-
-joblib
-
-spacy
-
-lightgbm
-
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
+    streamlit
+    scikit-learn
+    pandas
+    numpy
+    joblib
+    spacy
+    lightgbm
+    https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
 
 ---
 
@@ -193,19 +198,19 @@ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0
 
 Clone the repository:
 
-git clone <your-repository-link>
+    git clone <your-repository-link>
 
 Move into the project folder:
 
-cd yelp-feedback-analysis-spacy-ml
+    cd yelp-feedback-analysis-spacy-ml
 
 Install the required packages:
 
-uv pip install -r requirements.txt
+    uv pip install -r requirements.txt
 
 Run the Streamlit app:
 
-streamlit run app.py
+    streamlit run app.py
 
 ---
 
@@ -227,7 +232,6 @@ The trained model is saved using Joblib and reused in the Streamlit app for pred
 - Add more visual insights
 - Try deep learning models
 - Add more customer feedback analysis features
-- Deploy the application online
 
 ---
 
