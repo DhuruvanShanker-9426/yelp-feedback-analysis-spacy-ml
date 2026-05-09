@@ -3,7 +3,7 @@ import streamlit as st
 import time
 from utils.text_preprocessing import text_preprocessing,text_to_vector
 
-model=joblib.load("model/yelp_analysis_model.pkl")
+model=joblib.load("yelp_nlp_streamlit/model/yelp_analysis_model.pkl")
 
 st.title("⭐ Yelp Review Sentiment Analysis")
 
