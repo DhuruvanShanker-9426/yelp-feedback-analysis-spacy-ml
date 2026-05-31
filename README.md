@@ -48,7 +48,7 @@ This helps in understanding whether a customer's feedback is poor, average, or g
 - NumPy
 - Pandas
 - Joblib
-- Streamlit
+- Streamlit.
 
 ---
 
